@@ -1,0 +1,115 @@
+/* Căn chỉnh tổng thể */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  /* Màu nền nhẹ */
+  margin: 0;
+  padding: 0;
+}
+
+.view-cart {
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  /* Màu trắng cho khung nội dung */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Hiệu ứng bóng nh�� */
+}
+
+/* Hộp chứa toàn bộ nội dung */
+div.boxtrai.mr {
+  width: 80%;
+  margin-left: 105px;
+  /* margin: 20px auto; */
+  padding: 20px;
+  background: #ffffff;
+  /* Màu trắng cho khung nội dung */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* Hiệu ứng bóng nhẹ */
+}
+
+/* Tiêu đề giỏ hàng */
+.boxtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3a3a3a;
+  /* Màu xám đậm */
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #dcdcdc;
+  /* Đường kẻ nhạt */
+  padding-bottom: 10px;
+}
+
+/* Bảng giỏ hàng */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  /* Viền nhạt */
+  text-align: left;
+}
+
+table th {
+  background-color: #f7f7f7;
+  /* Nền nhạt */
+  color: #333333;
+  /* Chữ tối hơn */
+  font-size: 16px;
+}
+
+table td img {
+  max-width: 80px;
+  border-radius: 5px;
+}
+
+table td {
+  font-size: 14px;
+  color: #555555;
+  /* Màu chữ trung tính */
+}
+
+/* Phần tổng tiền */
+.table-footer {
+  text-align: right;
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 20px;
+  color: #333333;
+  /* Màu chữ đậm hơn */
+}
+
+/* Các nút hành động */
+.row.mb.bill a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  /* Chữ trắng */
+  background-color: #ff5722;
+  /* Màu xám trung tính */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.row.mb.bill a:hover {
+  background-color: #e64a19;
+  /* Màu đậm hơn khi hover */
+}
+
+/* Chỉnh lề cho các hàng trong bảng */
+.row.mb {
+  margin-left: 0;
+  /* Loại bỏ margin */
+}

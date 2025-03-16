@@ -1,0 +1,24 @@
+.mnu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.mnu ul li {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px #ccc solid;
+}
+.mnu ul li a {
+  color: #666;
+  text-decoration: none;
+}
+.mnu ul li:hover {
+  background-color: #ccc;
+}
+.searbox input[type='text'] {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+}

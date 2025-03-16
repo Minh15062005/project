@@ -1,0 +1,80 @@
+/* Bố cục tổng thể */
+.boxtrai {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tiêu đề danh mục */
+.boxtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Hộp nội dung sản phẩm */
+.boxcontent {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Lưới tự động co giãn */
+  gap: 20px;
+}
+
+/* Phong cách từng sản phẩm */
+.boxsp {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng mờ */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boxsp:hover {
+  transform: translateY(-5px); /* Di chuyển nhẹ lên khi hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Bóng đậm hơn khi hover */
+}
+
+/* Hình ảnh sản phẩm */
+.boxsp img {
+  max-width: 100%; /* Ảnh không vượt khung */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Giá sản phẩm */
+.boxsp p {
+  font-size: 1.2rem;
+  color: #ff5722; /* Màu cam nổi bật */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Tên sản phẩm */
+.boxsp a {
+  font-size: 1rem;
+  color: #007bff; /* Màu xanh dương */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.boxsp a:hover {
+  color: #0056b3; /* Xanh đậm hơn khi hover */
+}
+
+/* Điều chỉnh bố cục trên màn hình nhỏ */
+@media (max-width: 768px) {
+  .boxcontent {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    ); /* Bố cục nhỏ gọn hơn */
+  }
+}

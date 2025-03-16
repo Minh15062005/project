@@ -1,0 +1,276 @@
+/* Tổng thể */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header responsive */
+.header_responsive {
+  width: 100%;
+  background-color: #666f79;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo_responsive {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav_responsive {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item_responsive {
+  color: white;
+  font-size: 16px;
+}
+
+.icons_responsive {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons_responsive i {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.search-bar {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.form-search-bar input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-search-bar button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Slideshow (banner) */
+.banner {
+  margin-top: 80px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: auto; /* Để giữ tỷ lệ của ảnh */
+  padding: 0; /* Loại bỏ padding */
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #007bff;
+}
+
+/* Product Section */
+.boxtrai .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.boxsp {
+  width: calc(25%); /* Chia 4 cột với khoảng cách */
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.boxsp img {
+  max-width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.boxsp p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.mac-name {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.btnaddtocart input {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnaddtocart input:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+.footer-container {
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.feature {
+  width: 200px;
+  text-align: center;
+}
+
+.feature img {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-details div {
+  max-width: 200px;
+}
+
+.newsletter input {
+  padding: 5px;
+  width: calc(100% - 70px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav_responsive {
+    display: none;
+    flex-direction: column;
+    background-color: #007bff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    text-align: left;
+  }
+
+  .nav_responsive.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+  }
+
+  .boxsp {
+    width: calc(50% - 20px);
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    margin-bottom: 20px;
+  }
+
+  .footer-details {
+    flex-direction: column;
+    align-items: center;
+  }
+}

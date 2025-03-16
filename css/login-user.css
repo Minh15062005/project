@@ -1,0 +1,117 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+} */
+
+/* .row {
+  display: flex;
+  justify-content: center;
+} */
+
+.rowss {
+  background-image: url('https://images.pexels.com/photos/17759978/pexels-photo-17759978/free-photo-of-bi-n-b-u-tr-i-hoang-hon-n-c.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1  ');
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.login-form {
+  background: rgba(64, 64, 64, 0.15);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(25px);
+  text-align: center;
+  color: white;
+  width: 400px;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.15);
+}
+
+.login-title {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 12px 12px 12px 45px;
+  margin: 5px 0px;
+  border-radius: 99px;
+  outline: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+}
+
+.input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.input-box input:focus {
+  border-color: #b67373;
+  box-shadow: 0 0 8px rgba(233, 120, 120, 0.5);
+}
+
+.input-box input::-ms-reveal {
+  filter: invert(100%);
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #007bff;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #df5519;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  /* margin-bottom: 40px; */
+}
+
+.login-btn:hover {
+  background-color: #a63200;
+}
+
+.register {
+  margin-top: 15px;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.register a {
+  /* color: white; */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+}
+.register a:hover {
+  text-decoration: underline;
+}

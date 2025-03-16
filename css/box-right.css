@@ -1,0 +1,111 @@
+.boxphai {
+  padding: 15px;
+}
+
+.boxtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333333;
+  text-align: center;
+  /* Căn giữa tiêu đề */
+}
+
+.boxconten2,
+.row.boxconten {
+  background-color: #f8f9fa;
+  /* Màu nền nhạt */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boxconten2 ul {
+  list-style: none;
+  /* Bỏ gạch đầu dòng */
+  padding: 0;
+  margin: 0;
+}
+
+.boxconten2 ul li {
+  margin-bottom: 10px;
+}
+
+.boxconten2 ul li a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.boxconten2 ul li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Sản phẩm Hot */
+.top10 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.top10 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.top10 a {
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.top10 a:hover {
+  color: #007bff;
+}
+
+/* Tạo một lớp cho sidebar phần quản lý tài khoản */
+.boxconten2.menudoc {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.boxconten2.menudoc .mnu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.boxconten2.menudoc .mnu li {
+  margin: 10px 0;
+}
+
+.boxconten2.menudoc .mnu li a {
+  display: block;
+  padding: 8px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.boxconten2.menudoc .mnu li a:hover {
+  background-color: #f1f1f1;
+  color: #007bff;
+}
+
+.boxtitle {
+  font-weight: bold;
+  font-size: 16px;
+  color: #310de7;
+  margin-bottom: 10px;
+}

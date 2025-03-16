@@ -1,0 +1,162 @@
+/* Căn chỉnh tổng thể */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  /* Màu nền nhẹ */
+  margin: 0;
+  padding: 0;
+}
+
+/* Đảm bảo căn giữa tổng thể div#bill */
+div#bill.row.mb {
+  display: flex;
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  flex-direction: column;
+  /* Đặt các phần tử con theo chiều dọc */
+  margin: 20px auto;
+  /* Tạo khoảng cách tự động ở hai bên */
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+  /* Co giãn theo kích thước màn hình */
+}
+
+/* Đảm bảo boxtrai bên trong cũng được căn chỉnh */
+div.boxtrai.mr {
+  width: 100%;
+  /* Chiếm toàn bộ không gian của bố cục */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Căn giữa nội dung */
+  justify-content: center;
+}
+
+/* Form bên trong cũng cần căn chỉnh */
+div.boxtrai.mr form {
+  width: 100%;
+  max-width: 800px;
+  /* Giới hạn độ rộng tối đa */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Căn giữa theo chiều ngang */
+  justify-content: center;
+}
+
+/* Tiêu đề */
+.boxtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #dcdcdc;
+  padding-bottom: 10px;
+}
+
+/* Bảng thông tin */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table td {
+  padding: 10px;
+  font-size: 14px;
+  color: #555555;
+  vertical-align: middle;
+}
+
+table td:first-child {
+  font-weight: bold;
+  width: 35%;
+  /* Chiếm ít không gian hơn */
+}
+
+/* Input thông tin */
+.input-bill {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-bill:focus {
+  border-color: #6c757d;
+  /* Màu xám đậm khi focus */
+}
+
+/* Phương thức thanh toán */
+.boxcontent input[type='radio'] {
+  margin-right: 5px;
+}
+
+.boxcontent td {
+  padding: 10px;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* Phần thông tin giỏ hàng */
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.cart table th,
+.cart table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+.cart table th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+  color: #333333;
+}
+
+.cart table td img {
+  max-width: 80px;
+  border-radius: 5px;
+}
+
+/* Nút "Mua hàng" */
+.dat-hang {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff5722;
+  /* Màu xanh lá */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dat-hang:hover {
+  background-color: #e64a19;
+  /* Xanh lá đậm khi hover */
+}
+
+/* Phần giỏ hàng */
+.row.mb.bill {
+  text-align: center;
+  margin-top: 20px;
+}
